@@ -53,7 +53,6 @@ def test_get_user(create_single_user, client):
     # Assert
     assert response.status_code == 200
     assert 1 == body['id']
-    assert 1 is body['id']
 
 
 @pytest.mark.users
